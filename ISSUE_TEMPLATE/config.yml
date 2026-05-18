@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Browse the docs
+    url: https://xgoose.org/docs/
+    about: How xgoose works, the skill format, the AI gateway, and the API.
+  - name: Ask in the skill registry
+    url: https://xgoose.org/skills/
+    about: Looking for a skill, or want to publish one? Start here.
+  - name: Email the team
+    url: mailto:dev@xgoose.org
+    about: Account / billing / private support. Please use SECURITY.md for vulns.

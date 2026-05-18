@@ -1,0 +1,73 @@
+name: Bug report
+description: Something in xgoose is broken or behaving unexpectedly.
+title: "[bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug! The more context you
+        can give, the faster we can fix it.
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where did you hit this?
+      options:
+        - Chrome extension
+        - Firefox extension
+        - Safari extension (macOS)
+        - Safari extension (iOS)
+        - xgoose.org website
+        - Embedded widget (script tag)
+        - Agent core / skill runtime
+        - Other (please describe below)
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Extension version, commit, or "latest from store" if you don't know.
+      placeholder: e.g. 0.4.2 from the Chrome Web Store
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include console errors, stack traces, screenshots — whatever you have.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open https://example.com
+        2. Click the floating button
+        3. Ask "summarize this page"
+        4. Observe …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Sanity checks
+      options:
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+        - label: This is not a security issue (those go to dev@xgoose.org).
+          required: true

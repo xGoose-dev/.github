@@ -1,0 +1,51 @@
+name: Idea / feature request
+description: Suggest a feature, a new skill, or a tweak to how xgoose works.
+title: "[idea]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We love ideas. Before filing one, browse
+        [xgoose.org/skills](https://xgoose.org/skills/) — if it's a
+        site-specific helper, it probably wants to be a skill instead of
+        a core feature.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of idea is this?
+      options:
+        - New skill (site-specific behavior)
+        - Agent / chat UI feature
+        - AI gateway / pricing / models
+        - Developer tooling
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: |
+        Tell us the use case first. What were you doing when you wished
+        xgoose did something different?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: How would you like it to work?
+      description: Rough sketch is fine — UI screenshots / mockups welcome.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+    validations:
+      required: false
