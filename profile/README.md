@@ -126,6 +126,20 @@ cold-start surprises.
 
 ---
 
+## Community
+
+<p>
+  <a href="https://linux.do">
+    <img src="https://raw.githubusercontent.com/xGoose-dev/.github/main/profile/linux-do.svg" alt="LINUX DO" width="56" align="left" />
+  </a>
+  Thanks to the <a href="https://linux.do"><strong>LINUX DO</strong></a> community
+  for recognizing and supporting xgoose as an open-source project.<br/>
+  感谢 <a href="https://linux.do"><strong>LINUX DO</strong></a> 社区对 xgoose 开源项目的认可与支持。
+</p>
+<br clear="left" />
+
+---
+
 ## License
 
 Source is published per-repo; the agent core, skills, and extensions are
